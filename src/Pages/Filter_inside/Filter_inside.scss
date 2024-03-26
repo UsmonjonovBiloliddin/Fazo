@@ -1,0 +1,173 @@
+
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #BDBDBD;
+    .close{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            font-size: 25px;
+            color: #BDBDBD;
+        }
+    }
+}
+.Filter_inside{
+    width: 100%;
+    height: auto;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .Slider{
+        width: 24%;
+    }
+
+    .right{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .Aboute{
+            width: 60%;
+        }
+        .AStarter{
+            width: 38%;
+        }
+    }
+    
+}
+
+@media screen and (max-width:447px) {
+
+    .map{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #BDBDBD;
+        font-size: 15px;
+        .close{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            svg{
+                font-size: 25px;
+                color: #BDBDBD;
+            }
+        }
+    }
+
+.Filter_inside{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .Slider{
+        width: 100%;
+    }
+   .right{
+    width: 100%;
+    .Aboute{
+        width: 100%;
+    }
+    .AStarter{
+        width: 100%;
+    }
+   }
+}
+}
+
+
+@media screen and (min-width:447px) and (max-width:769px) {
+
+    .map{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #BDBDBD;
+        font-size: 15px;
+        .close{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            svg{
+                font-size: 25px;
+                color: #BDBDBD;
+            }
+        }
+    }
+
+.Filter_inside{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .Slider{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        .Aboute{
+            width: 100%;
+        }
+        .AStarter{
+            width: 100%;
+        }
+    }
+}
+}
+
+@media screen and (min-width:769px) and (max-width:990px) {
+
+    .map{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #BDBDBD;
+        font-size: 15px;
+        .close{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            svg{
+                font-size: 25px;
+                color: #BDBDBD;
+            }
+        }
+    }
+
+    .Filter_inside{
+        width: 100%;
+        height: auto;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .Slider{
+            width: 35%;
+        }
+        .right{
+            width: 65%;
+            .Aboute{
+                width: 100%;
+            }
+            .AStarter{
+                width: 100%;
+            }
+        }
+    }
+}

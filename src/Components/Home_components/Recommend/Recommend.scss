@@ -1,0 +1,252 @@
+@import "../../Veribles/Veribles.scss";
+.Recommend {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .Recommend_textr {
+    width: 100%;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      color: $grey;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      color: #a5a5a5;
+      gap: 20px;
+    }
+  }
+
+  .block {
+    width: 100%;
+    display: flex;
+    padding: 0px 80px;
+    gap: 30px;
+    .left {
+      width: 26%;
+      padding: 10px 0px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .Recommend_boxes{
+      width: auto;
+      width: 70%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      .Recommend_box {
+        width: 300px;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid rgba(201, 201, 201, 0.597);
+        border-radius: 10px;
+        position: relative;
+        margin: 15px 0px;
+  
+        .img {
+          width: 100%;
+          height: 220px;
+          display: flex;
+          justify-content: center;
+          object-fit: cover;
+          background-color: transparent;
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+  
+        .price {
+          text-align: center;
+          margin-top: 15px;
+          line-height: 20px;
+          h3 {
+              width: 100%;
+              color: $red;
+              font-size: 16px;
+              font-weight: 450;
+              
+          }
+          p{
+              color: $grey;
+              font-size: 15px;
+              line-height: 20px;
+            }
+        }
+  
+        .name {
+          text-align: center;
+          margin-top: 10px;
+  
+          h2 {
+            font-size: 15px;
+            padding: 7px 0px;
+            font-weight: 510;
+            color: rgba(41, 41, 41, 0.846);
+            font-family: "Rubik", sans-serif;
+          }
+        }
+  
+        .shop {
+          width: 100%;
+          padding: 8px 0px;
+          display: flex;
+          gap: 40px;
+          justify-content: center;
+          margin-top: 10px;
+          
+          svg {
+            font-size: 16px;
+            color: #909090;
+  
+            &:last-child {
+              font-size: 20px;
+            }
+          }
+  
+          svg:hover {
+            cursor: pointer;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .Recommend {
+    width: 100%;
+    height: auto;
+
+    .Recommend_text {
+      width: 100%;
+      padding: 20px 20px;
+
+      h2 {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .block {
+      width: 100%;
+      display: flex;
+      padding: 0px 20px;
+      gap: 30px;
+
+      .left {
+       display: none;
+      }
+
+      .Recommend_boxes {
+        width: 100%;
+        justify-content: center;
+
+        .Recommend_box {
+          width: 300px;
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 566px) and (max-width: 769px) {
+  .Recommend {
+    width: 100%;
+    height: auto;
+
+    .Recommend_text {
+      width: 100%;
+      padding: 20px 20px;
+
+      h2 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .block {
+        width: 100%;
+        display: flex;
+        padding: 0px 20px;
+        gap: 30px;
+  
+        .left {
+         display: none;
+        }
+  
+        .Recommend_boxes {
+          width: 100%;
+          justify-content: space-around;
+  
+          .Recommend_box {
+            width: 300px;
+            margin: 10px 0px;
+          }
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .Recommend {
+      width: 100%;
+      height: auto;
+  
+    
+  
+      .block {
+          width: 100%;
+          display: flex;
+          padding: 0px 20px;
+          gap: 30px;
+    
+          .left {
+           display: none;
+          }
+    
+          .Recommend_boxes {
+            width: 100%;
+            justify-content: space-around;
+    
+            .Recommend_box {
+              width: 300px;
+              margin: 10px 0px;
+            }
+          }
+        }
+    }
+  }

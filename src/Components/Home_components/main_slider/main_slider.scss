@@ -1,0 +1,406 @@
+@import "../../Veribles/Veribles.scss";
+.Main_Slide {
+  width: 100%;
+  height: auto;
+  background-color: #f1eded39;
+  margin-top: 50px;
+  padding: 30px 60px;
+  position: relative;
+
+  .swiper {
+    display: flex;
+    .swiper {
+      display: flex;
+      .swiper-slide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+
+        .title {
+          width: 36%;
+          height: 100%;
+          flex-direction: column;
+          padding: 0px 50px;
+          display: flex;
+          justify-content: center;
+
+          h1 {
+            line-height: 60px;
+            font-weight: 500;
+            font-size: 35px;
+            color: #404040;
+            font-family: "Rubik", sans-serif;
+          }
+
+          p {
+            line-height: 25px;
+            color: $grey2;
+            font-size: 14px;
+          }
+        }
+        .img {
+          width: 32%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          object-fit: cover;
+          img {
+            width: 70%;
+            height: 100%;
+          }
+        }
+        .price {
+          width: 30%;
+          height: 100%;
+          display: flex;
+          text-align: start;
+          justify-content: start;
+          flex-direction: column;
+          padding: 0px 60px;
+          display: flex;
+          justify-content: center;
+
+          h1 {
+            font-size: 22px;
+            color: $red;
+            font-weight: 400;
+          }
+
+          p {
+            font-size: 18px;
+            color: $grey2;
+            font-weight: 300;
+            text-decoration: line-through;
+            line-height: 40px;
+          }
+
+          button {
+            padding: 10px 20px;
+            width: 60%;
+            margin-top: 15px;
+            border: 1px solid $red;
+            background-color: transparent;
+            color: $red;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #ee473b5c;
+            }
+            &:active {
+              background-color: #ff150493;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header_swiper_buttons {
+    width: 90%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    justify-content: space-between;
+    .swiper_buttons_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      color: #808080;
+      background-color: #f7f7f7;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.1s ease;
+      z-index: 3;
+      &:active {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Main_Slide {
+    margin-top: 20px 0px;
+    padding: 0px 0px;
+    .swiper {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 600px;
+      .swiper {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .swiper-slide {
+          display: flex;
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .title {
+            width: 100%;
+            height: auto;
+            padding: 0px 0px;
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 15px;
+              text-align: center;
+            }
+          }
+
+          .price {
+            width: 100%;
+            height: auto;
+            padding: 0px 20px;
+
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 16px;
+              text-align: center;
+              text-decoration: line-through;
+            }
+
+            button {
+              margin: 20px auto;
+            }
+          }
+          .img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .header_swiper_buttons {
+      width: 100%;
+      padding: 0px 20px;
+
+      .swiper_buttons_button {
+        padding: 7px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Main_Slide {
+    margin-top: 20px 0px;
+    padding: 0px 0px;
+    .swiper {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 350px;
+      .swiper {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .swiper-slide {
+          display: flex;
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .title {
+            width: 48%;
+            height: auto;
+            padding: 0px 0px;
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 15px;
+              text-align: center;
+            }
+          }
+
+          .price {
+            width: 100%;
+            height: auto;
+            padding: 0px 20px;
+
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 15px;
+              text-align: center;
+              text-decoration: l;
+            }
+
+            button {
+              margin: 20px auto;
+            }
+          }
+          .img {
+            width: 48%;
+          }
+        }
+      }
+    }
+
+    .header_swiper_buttons {
+      width: 100%;
+      padding: 0px 20px;
+
+      .swiper_buttons_button {
+        padding: 7px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Main_Slide {
+    margin-top: 20px 0px;
+    padding: 0px 0px;
+    .swiper {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 350px;
+      .swiper {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .swiper-slide {
+          display: flex;
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .title {
+            width: 48%;
+            height: auto;
+            padding: 0px 0px;
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 15px;
+              text-align: center;
+            }
+          }
+
+          .price {
+            width: 100%;
+            height: auto;
+            padding: 0px 20px;
+
+            h1 {
+              font-size: 22px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 16px;
+              text-align: center;
+              text-decoration: l;
+            }
+
+            button {
+              width: 200px;
+              margin: 20px auto;
+            }
+          }
+          .img {
+            width: 48%;
+          }
+        }
+      }
+    }
+
+    .header_swiper_buttons {
+      width: 100%;
+      padding: 0px 20px;
+
+      .swiper_buttons_button {
+        padding: 7px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Main_Slide {
+    margin-top: 20px 0px;
+    padding: 0px 0px;
+    .swiper {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 350px;
+      .swiper {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .swiper-slide {
+          display: flex;
+          height: auto;
+          flex-wrap: wrap;
+          justify-content: space-around;
+
+          .title {
+            width: 32%;
+            height: auto;
+            padding: 0px 0px;
+            h1 {
+              font-size: 20px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 15px;
+              text-align: center;
+            }
+          }
+
+          .price {
+            width: 132;
+            height: auto;
+            padding: 0px 20px;
+
+            h1 {
+              font-size: 22px;
+              text-align: center;
+            }
+
+            p {
+              font-size: 16px;
+              text-align: center;
+              text-decoration: l;
+            }
+
+            button {
+              margin: 20px auto;
+            }
+          }
+          .img {
+            width: 32%;
+          }
+        }
+      }
+    }
+
+    .header_swiper_buttons {
+      width: 100%;
+      padding: 0px 20px;
+
+      .swiper_buttons_button {
+        padding: 7px;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik:wght@300;600;800&family=Vina+Sans&display=swap");
+
+$red: #ed3729;
+$grey: #bdbdbd;
+$grey2: #909090;
+$textColor: #e5e5e5;
+
+.NavbarTop {
+  width: 100%;
+  background-color: $red;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 80px;
+    color: white;
+
+    .left {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      color: white;
+
+      .regions {
+        height: auto;
+        &:hover {
+          .select {
+            display: flex;
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+        .select {
+          width: 150px;
+          height: 300px;
+          position: absolute;
+          top: 28px;
+          left: 60px;
+          background-color: white;
+          border-radius: 7px;
+          z-index: 5;
+          padding: 10px 20px;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          overflow-y: scroll;
+          display: none;
+          a {
+            width: 100%;
+            color: black;
+            &:hover {
+              color: $red;
+            }
+            h3 {
+              width: 100%;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+
+        a {
+          color: $textColor;
+          font-size: 14px;
+        }
+      }
+    }
+    .right {
+      width: auto;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      color: white;
+
+      h4 {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      select {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        option {
+          color: black;
+        }
+      }
+    }
+
+    svg {
+      display: none;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  ::-webkit-scrollbar {
+    height: 20px;
+    padding: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgb(195, 194, 194);
+    padding: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $grey2;
+    border-radius: 12px;
+    scrollbar-color: #d9d9d9 $grey2;
+    scrollbar-width: thin;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .NavbarTop {
+    display: none;
+  }
+}

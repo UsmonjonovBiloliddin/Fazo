@@ -1,0 +1,131 @@
+  @import "../../Components//Veribles/Veribles.scss";
+
+  .map{
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+   h5{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   p{
+    font-size: 12px;
+    display: flex;
+   }
+    
+  }
+
+.Filter{
+    width: 100%;
+    display: flex;
+    padding: 0px 80px;
+    gap: 40px;
+}
+
+@media screen and (max-width:447px) {
+
+  .map{
+    padding: 10px 20px;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h5{
+      font-size: 13px;
+     }
+     .p{
+      width: auto;
+      font-size: 13px;
+    }
+  }
+  .Filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    gap: 40px;
+}
+}
+
+@media screen and (min-width:447px) and (max-width:769px) {
+  .map{
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #626364;
+    p{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 30px;
+    }
+  }
+  .Filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    gap: 40px;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:990px) {
+  .map{
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #626364;
+    p{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 30px;
+    }
+  }
+  .Filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    gap: 40px;
+}
+}
+
+@media screen and (min-width:990px) and (max-width:1200px) {
+  .map{
+    width: 100%;
+    padding: 10px 20px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #626364;
+    p{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 30px;
+    }
+  }
+  .Filter{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    gap: 40px;
+}
+}

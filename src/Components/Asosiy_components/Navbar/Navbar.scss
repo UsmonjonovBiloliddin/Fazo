@@ -1,0 +1,358 @@
+$red: #ed3729;
+$grey: #bdbdbd;
+$grey2: #909090;
+.Navbar {
+  width: 100%;
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    overflow: hidden;
+
+    form {
+      display: flex;
+      border-radius: 6px;
+      border: 1px solid $red;
+      
+      .SearchInput {
+        padding: 10px 250px 10px 10px;
+        border-radius: 8px 0px 0px 8px;
+        border-right: none;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+        }
+
+        .Microphone {
+          font-size: 22px;
+          position: absolute;
+          right: 10px;
+          top: 20%;
+          color: $grey;
+          cursor: pointer;
+        }
+      }
+      a {
+        width: auto;
+        height: auto;
+
+        button {
+          cursor: pointer;
+          background: $red;
+          width: auto;
+          height: 100%;
+          border: none;
+          font-size: 15px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          padding: 10px 20px; 
+          border-radius: 0px 6px 6px 0px;
+        }
+      }
+    }
+
+    .Cantact {
+      width: auto;
+      height: auto;
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+
+      a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+        color: rgb(39, 39, 39);
+        position: relative;
+
+        .quantity{
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: $red;
+          color: white;
+          position: absolute;
+          right: 0;
+          top: -5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p{
+            font-size: 9px;
+          }
+        }
+        &.active {
+          color: $red;
+          .icon {
+            color: $red;
+            
+          }
+        }
+        p {
+          font-size: 12px;
+          font-weight: 300px;
+        }
+        .icon {
+          width: 100%;
+          cursor: pointer;
+          color: #5f5e5e;
+        
+          &:hover {
+            color: #111111;
+          }
+        }
+      }
+    }
+    .Media {
+      display: none;
+      gap: 20px;
+      color: $grey2;
+
+      a {
+        color: $grey2;
+      }
+
+      .regions {
+        &:hover {
+          .select {
+            display: flex;
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 400;
+        }
+        .select {
+          width: 110px;
+          height: 300px;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          background-color: white;
+          border-radius: 7px;
+          z-index: 5;
+          color: black;
+          padding: 10px 20px;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          overflow-y: scroll;
+          display: none;
+
+          a {
+            color: black;
+            font-size: 11px;
+
+            &:hover {
+              color: $red;
+            }
+            h3 {
+              width: 100%;
+            }
+          }
+        }
+      }
+      ::-webkit-scrollbar {
+        width: 5px;
+        height: 100px;
+        padding: 20px;
+        border-radius: 12px;
+      }
+      ::-webkit-scrollbar {
+        height: 20px;
+        padding: 20px;
+      }
+    
+      ::-webkit-scrollbar-track {
+        background: rgb(195, 194, 194);
+        padding: 20px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: $grey2;
+        border-radius: 12px;
+        scrollbar-color: #d9d9d9 $grey2;
+        scrollbar-width: thin;
+        padding: 20px;
+      }
+    }
+  }
+  .media-search {
+    display: none;
+    padding: 0px 30px;
+
+    form {
+      display: flex;
+      border-radius: 8px;
+      border: 3px solid #7ac751;
+      width: 100%;
+
+      input {
+        width: 100%;
+        height: 6vh;
+        border-radius: 8px 0px 0px 8px;
+        border-right: none;
+        border: none;
+        padding: 0px 0px 0px 20px;
+        outline: none;
+      }
+
+      button {
+        background: #7ac751;
+        width: 50px;
+        height: 100%;
+        border: none;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 447px) {
+  .Navbar {
+    height: 10vh;
+    nav {
+      padding: 10px 20px;
+      .logo {
+        width: 80px;
+        img {
+          width: 100%;
+        }
+      }
+
+      form {
+        display: none;
+      }
+
+      .Cantact {
+        display: none;
+      }
+
+      .Media {
+        display: flex;
+
+        a {
+          color: #5f5e5e;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Navbar {
+    height: 10vh;
+    nav {
+      padding: 10px 20px;
+      .logo {
+        width: 80px;
+        img {
+          width: 100%;
+        }
+      }
+
+      form {
+        display: none;
+      }
+
+      .Cantact {
+        display: none;
+      }
+
+      .Media {
+        display: flex;
+
+        a {
+          color: #5f5e5e;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Navbar {
+    height: 10vh;
+    nav {
+      padding: 20px 20px;
+      .logo {
+        width: 80px;
+        img {
+          width: 100%;
+        }
+      }
+
+      form {
+        display: none;
+      }
+
+      .Cantact {
+        display: none;
+      }
+
+      .Media {
+        display: flex;
+        .regions{
+          .select{
+            top: 50px;
+          }
+        }
+        a {
+          color: #5f5e5e;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Navbar {
+    height: 10vh;
+    nav {
+      padding: 10px 20px;
+      align-items: center;
+      .logo {
+        width: 80px;
+        img {
+          width: 100%;
+        }
+      }
+
+      form {
+        display: flex;
+      }
+
+      .Cantact {
+        display: flex;
+      }
+
+      .Media {
+        display: none;
+
+        a {
+          color: #5f5e5e;
+        }
+      }
+    }
+  }
+}

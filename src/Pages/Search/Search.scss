@@ -1,0 +1,18 @@
+@import "../../Components/Veribles/Veribles.scss";  
+  
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #BDBDBD;
+    .close{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            font-size: 25px;
+            color: #BDBDBD;
+        }
+    }
+}

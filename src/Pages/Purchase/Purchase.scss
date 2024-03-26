@@ -1,0 +1,292 @@
+@import "../../Components//Veribles/Veribles.scss";
+.purchase {
+  padding: 20px 100px 80px 100px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  
+ 
+}
+
+@media screen and (max-width: 448px) {
+  .purchase {
+    padding: 0 10px;
+    flex-direction: column;
+    .purchase_left {
+      width: 100%;
+
+      h2 {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      .sections {
+        gap: 30px;
+        section {
+          .title {
+            gap: 8px;
+            font-size: 16px;
+            margin-bottom: 20px;
+
+            span {
+              padding: 6px 10px;
+            }
+          }
+          .content {
+            &.yourDetails {
+              row-gap: 10px;
+              .MuiTextField-root {
+                width: 100%;
+
+                .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+                  font-size: 12px;
+                }
+                #labelInput {
+                  padding: 10px 10px 14px 10px;
+                }
+              }
+            }
+            &.yourOrders {
+              gap: 20px;
+              .product {
+                width: 100%;
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+
+                .product_info {
+                  align-items: start;
+                  flex-direction: column;
+                  gap: 10px;
+                  h3 {
+                    font-size: 14px;
+                  }
+                  p {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+            &.radio {
+              .MuiFormGroup-root {
+                gap: 10px;
+                .MuiFormControlLabel-root {
+                  width: 100%;
+                  padding: 6px 2px;
+                  .css-ahj2mt-MuiTypography-root {
+                    font-size: 14px;
+                  }
+                  .css-1hbvpl3-MuiSvgIcon-root,
+                  .css-11zohuh-MuiSvgIcon-root {
+                    width: 20px;
+                  }
+                }
+              }
+            }
+            &.getting {
+              gap: 20px;
+              .stage {
+                .sub-title {
+                  margin-bottom: 15px;
+                }
+                .location {
+                  flex-wrap: wrap;
+                  gap: 14px;
+                  .MuiFormControl-root {
+                    width: 100%;
+                  }
+                }
+                &.addressDiv {
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  .address {
+                    &.floor {
+                      &.MuiFormControl-root {
+                        width: 100%;
+                      }
+                    }
+                    &.MuiFormControl-root {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .purchase_right {
+      width: 100%;
+      padding: 14px 14px 20px 14px;
+      margin: 30px 0;
+
+      h3 {
+        font-size: 14px;
+      }
+      .stage {
+        &.line {
+          padding-bottom: 14px;
+        }
+        &.total {
+          margin: 0;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      button {
+        font-size: 13px;
+      }
+      .privacy {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 448px) and (max-width: 768px) {
+  .purchase {
+    padding: 0 14px;
+    flex-direction: column;
+    margin: 30px 0;
+
+    .purchase_left {
+      width: 100%;
+      h2 {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+      .sections {
+        gap: 30px;
+        section {
+          .title {
+            gap: 8px;
+            font-size: 17px;
+            margin-bottom: 25px;
+
+            span {
+              padding: 8px 12px;
+            }
+          }
+          .content {
+            &.yourDetails {
+              row-gap: 14px;
+              .MuiTextField-root {
+                width: 100%;
+
+                .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+                  font-size: 12px;
+                }
+                #labelInput {
+                  padding: 12px 12px 14px 12px;
+                }
+              }
+            }
+            &.yourOrders {
+              gap: 20px;
+              .product {
+                width: 100%;
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+                img {
+                  width: 130px;
+                }
+                .product_info {
+                  align-items: start;
+                  flex-direction: column;
+                  gap: 10px;
+                  h3 {
+                    font-size: 15px;
+                  }
+                  p {
+                    font-size: 17px;
+                  }
+                }
+              }
+            }
+            &.radio {
+              .MuiFormGroup-root {
+                gap: 12px;
+                .MuiFormControlLabel-root {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .purchase_right {
+      width: 100%;
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .purchase {
+    padding: 0 14px;
+    .purchase_left {
+      h2 {
+        font-size: 22px;
+        margin: 20px 0;
+      }
+      .sections {
+        gap: 30px;
+        section {
+          .title {
+            font-size: 17px;
+            margin-bottom: 28px;
+
+            span {
+              padding: 10px 14px;
+            }
+          }
+          .content {
+            width: 100%;
+            &.yourDetails {
+              row-gap: 16px;
+              .MuiTextField-root {
+                width: 49%;
+                #labelInput {
+                  padding: 12px 12px 14px 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .purchase_right {
+      width: 34%;
+      padding: 14px;
+      margin: 30px 0;
+
+      h3 {
+        font-size: 15px;
+      }
+      .stage {
+        &.line {
+          padding-bottom: 14px;
+        }
+        &.total {
+          margin: 0;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+      button {
+        font-size: 13px;
+      }
+      .privacy {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+}

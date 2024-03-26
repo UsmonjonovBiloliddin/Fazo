@@ -1,0 +1,151 @@
+$red: #ed3729;
+$grey: #e2e2e2;
+$grey2:#909090;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik:wght@300;600;800&family=Vina+Sans&display=swap");
+
+// font-family: "Gill Sans Extrabold", sans-serif;
+// font-family: "Rubik", sans-serif;
+
+.barscart {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    top: 0vh;
+    left: -100%;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    backdrop-filter: blur(1px);
+    background-color: #20202052;
+    
+      .insite{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: flex-start;
+        background-color: white;
+        padding: 15px;
+
+
+        .close{
+          width: 100%;
+          height:30px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          svg{
+            font-size: 23px
+          }
+          .img{
+            display: flex;
+            align-items: center;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        .register{
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          .div{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            h3{
+              font-size: 15px;
+              font-family: "Gill Sans Extrabold", sans-serif;
+              color: #202020;
+            }
+            span{
+              color: $grey;
+            }
+            .bg{
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: #F2F2F2;
+              font-size: 20px;
+            }
+          }
+        }
+
+
+        .categories{
+          width: 100%;
+          height: auto;
+
+         .category{
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          .div{
+            width: 250px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #202020;
+            svg{
+              color: $grey2;
+              font-size: 23px;
+            }
+          }
+         }
+        }
+
+        .languages{
+          width: 100%;
+          height: 40px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          button{
+            padding: 5px 15px;
+            border-radius: 5px;
+            border: 1px solid;
+          }
+
+          .rus{
+            background-color: $red;
+            border: none;
+            color: white;
+          }
+          .uzb{
+            background-color: transparent;
+            border: 1px solid gray;
+          }
+        }
+        .call{
+          width: 100%;
+          height: 40px;
+
+          p{
+            display: flex;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+      
+         
+      }
+      .barscart.active {
+        left: 0px;
+      }

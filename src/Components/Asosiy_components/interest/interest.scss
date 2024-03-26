@@ -1,0 +1,197 @@
+@import "../../Veribles/Veribles.scss";
+
+.Products_that_may_also_be_of_interest {
+  .interest_text {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 20px 0px;
+    h2 {
+      height: auto;
+      color: rgb(88, 88, 88);
+    }
+
+    p {
+      font-size: 16px;
+      font-family: "Gill Sans Extrabold", sans-serif;
+      display: flex;
+      align-items: center;
+      color: rgb(118, 118, 118);
+      gap: 20px;
+    }
+  }
+  .interest_boxes {
+    width: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+
+    .interest_box {
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 1px solid rgb(201, 201, 201);
+      border-radius: 10px;
+      position: relative;
+      margin: 10px 0px;
+      padding: 20px 10px;
+
+      &:hover {
+        transition: all 0.3s linear;
+        border: 1px solid rgb(50, 50, 50);
+      }
+
+      .img {
+        width: auto;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .price {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0px;
+        h3 {
+          width: 100%;
+          color: #ed3729;
+          font-size: 20px;
+        }
+
+        p {
+          width: 100%;
+          color: #909090;
+          font-size: 16px;
+        }
+      }
+
+      .name {
+        text-align: center;
+        h2 {
+          font-size: 18px;
+          padding: 15px 0px;
+          font-weight: 550;
+          font-family: "Rubik", sans-serif;
+          color: #333333;
+        }
+      }
+
+      .shop {
+        width: 100%;
+        padding: 15px 0px;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        margin-top: 10px;
+
+        svg {
+          font-size: 18px;
+          color: #909090;
+        }
+
+        svg:hover {
+          cursor: pointer;
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Products_that_may_also_be_of_interest {
+
+    
+    .interest_text {
+     width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+    }
+    .interest_boxes {
+      justify-content: center;
+    }
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Products_that_may_also_be_of_interest {
+    .interest_text {
+      width: 100%;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       text-align: center;
+       h2 {
+         font-size: 17px;
+       }
+ 
+       p {
+         margin-top: 10px;
+       }
+     }
+    .interest_boxes {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Products_that_may_also_be_of_interest {
+    .interest_text {
+      width: 100%;
+       justify-content: center;
+       flex-wrap: wrap;
+       text-align: center;
+ 
+       h2 {
+         font-size: 17px;
+       }
+ 
+       p {
+         margin-top: 10px;
+       }
+     }
+    .interest_boxes {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Products_that_may_also_be_of_interest {
+    .interest_text {
+      justify-content: space-between;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      p {
+        line-height: 30px;
+      }
+    }
+    .interest_boxes {
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+
+@import "../../Veribles/Veribles.scss";
+
+.Modellar {
+    width: 100%;
+    height: auto;
+
+    .text {
+      width: 100%;
+      padding: 30px 0px;
+      color: rgb(88, 88, 88);
+
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+    .selects {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        padding: 5px 20px;
+        border: 1px solid $grey;
+
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: $grey2;
+          text-transform: capitalize;
+        }
+
+        &:hover {
+          background-color: #d1d1d1c1;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 447px) {
+    .Modellar {
+        width: 100%;
+        height: auto;
+  
+        .text {
+          text-align: center;
+          h3 {
+            font-size: 17px;
+          }
+        }
+        .selects {
+          justify-content: center;
+        }
+      }
+  }
+  @media screen and (min-width: 447px) and (max-width: 769px) {
+    .Modellar {
+        width: 100%;
+        height: auto;
+  
+        .text {
+          display: flex;
+          justify-content: center;
+          h3 {
+            font-size: 17px;
+          }
+        }
+        .selects {
+          justify-content: center;
+        }
+      }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 990px) {
+    .Modellar {
+        width: 100%;
+        height: auto;
+  
+        .text {
+          display: flex;
+          justify-content: center;
+          h3 {
+            font-size: 17px;
+          }
+        }
+        .selects {
+          justify-content: center;
+        }
+      }
+  }
+  
+  @media screen and (min-width: 990px) and (max-width: 1200px) {
+    .Modellar {
+        width: 100%;
+        height: auto;
+  
+        .text {
+          display: flex;
+          justify-content: center;
+          h3 {
+            font-size: 17px;
+          }
+        }
+        .selects {
+          justify-content: center;
+        }
+      }
+  }

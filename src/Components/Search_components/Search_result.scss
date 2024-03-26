@@ -1,0 +1,167 @@
+@import "../../Components//Veribles/Veribles.scss";
+.Result {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 80px;
+
+
+  .text{
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .Result_boxes {
+    width: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  
+    .Result_box{
+
+        width: 300px;
+        padding: 15px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid rgb(201, 201, 201);
+        border-radius: 10px;
+        position: relative;
+        margin: 15px 0px;
+
+        .img{ 
+            width:auto;
+            display:flex;
+            justify-content: center;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .price{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            padding: 10px 0px;
+            h3{
+                width: 100%;
+                color:$red;
+                font-size: 20px;
+            }
+
+            p{
+                width: 100%;
+                color: $grey2;
+                font-size: 16px;
+            }
+
+          
+        }
+
+        .name{
+            text-align: center;
+            h2{
+                font-size: 18px;
+                padding: 15px 0px;
+                font-weight: 550;
+                font-family: "Rubik", sans-serif;
+            }
+        }
+
+        
+
+        .shop{
+            width: 100%;
+            padding: 15px 0px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 10px;
+
+            svg{
+                font-size: 18px;
+                color: $grey2;
+            }
+
+            svg:hover{
+                cursor: pointer;
+                color: $red;
+            }
+        }
+    }
+  }
+}
+
+
+@media screen and (max-width: 447px) {
+  .Result {
+    padding: 0px 20px;
+ 
+  
+    .Result_boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+      
+    }
+  }
+}
+
+
+@media screen and (min-width: 447px) and (max-width:769px) {
+  .Result {
+    padding: 0px 20px;
+ 
+  
+    .Result_boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    
+      
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:990px) {
+  .Result {
+    padding: 0px 20px;
+ 
+  
+    .Result_boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    
+      
+    }
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width:1200px) {
+  .Result {
+    padding: 0px 20px;
+ 
+  
+    .Result_boxes {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    
+      
+    }
+  }
+}

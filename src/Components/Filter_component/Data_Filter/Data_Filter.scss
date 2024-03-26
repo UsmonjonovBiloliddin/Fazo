@@ -1,0 +1,107 @@
+@import "../../Veribles/Veribles.scss";
+.Data_filter {
+  width: 23%;
+
+  .height {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(196, 193, 193, 0.352);
+
+    :where(.css-dev-only-do-not-override-1xg9z9n).ant-slider .ant-slider-track {
+      background-color: $red;
+      border-radius: 2px;
+    }
+    :where(.css-dev-only-do-not-override-1xg9z9n).ant-slider
+      .ant-slider-handle:after {
+      background-color: #ff1100;
+      box-shadow: 0 0 0 2px $red;
+    }
+    #panel1-header {
+      align-items: center;
+    }
+    .Data_filter .height .checkboxs {
+      margin-top: 10px;
+    }
+    :where(.css-dev-only-do-not-override-1xg9z9n).ant-checkbox-checked
+      .ant-checkbox-inner {
+      background-color: $red;
+      border-color: $red;
+    }
+    .Availability {
+      width: 100%;
+      padding: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .checkbox {
+        width: 100%;
+        padding: 10px 20px;
+        border: 2px solid rgba(251, 56, 56, 0.664);
+        border-radius: 10px;
+
+        .checkbox {
+          color: $red;
+          background-color: red;
+        }
+      }
+    }
+
+    .checkboxs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: -20px;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: $red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff1100;
+    }
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Data_filter {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Data_filter {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Data_filter {
+    width: 40%;
+    border-radius: 10px;
+    height: 770px;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Data_filter {
+    width: 30%;
+    border-radius: 10px;
+    height: 770px;
+    margin-top: 10px;
+  }
+}

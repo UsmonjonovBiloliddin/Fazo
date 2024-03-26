@@ -1,0 +1,164 @@
+.Brends_Slide {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  .Brends_Slide_text {
+    width: 100%;
+    padding: 0px 100px;
+
+    h3 {
+      margin: 20px 0px;
+      font-size: 20px;
+      color: #797979;
+    }
+  }
+  .Swiper {
+    width: 100%;
+    padding: 0px 80px;
+    position: relative;
+    .swiper {
+      width: 96%;
+      height: 100px;
+    }
+    .swiper-slide {
+      border: 1px solid #d5d4d4;
+      display: flex;
+      border-radius: 10px;
+      .img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+
+        img {
+          height: auto;
+          width: auto;
+        }
+      }
+    }
+  }
+  .header_swiper_buttons {
+    width: auto;
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    .swiper_buttons_buttona {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      color: #c0bdbd;
+      font-size: 19px;
+      cursor: pointer;
+      transition: all 0.1s ease;
+      z-index: 3;
+      &:active {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Brends_Slide {
+    width: 100%;
+    height: auto;
+
+    .Brends_Slide_text {
+      width: 100%;
+      padding: 0px 20px;
+
+      h3 {
+        margin: 20px 15px;
+        font-size: 17px;
+        color: #5f5f5f;
+      }
+    }
+    .Swiper {
+      padding: 0px 20px;
+
+      .swiper {
+        padding: 0px 5px;
+      }
+    }
+    .header_swiper_buttons {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Brends_Slide {
+    width: 100%;
+    height: auto;
+
+    .Brends_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #565656;
+      }
+    }
+    .Swiper {
+      padding: 0px 20px;
+    }
+    .header_swiper_buttons {
+      display: flex;
+      right: 40px;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Brends_Slide {
+    width: 100%;
+    height: auto;
+
+    .Brends_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #565656;
+      }
+    }
+    .Swiper {
+      padding: 0px 20px;
+    }
+    .header_swiper_buttons {
+      display: flex;
+      right: 40px;
+    }
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Brends_Slide {
+    width: 100%;
+    height: auto;
+
+    .Brends_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #565656;
+      }
+    }
+    .Swiper {
+      padding: 0px 20px;
+    }
+    .header_swiper_buttons {
+      display: flex;
+      right: 40px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rubik:wght@300;600;800&family=Vina+Sans&display=swap");
+$red: #ed3729;
+$grey: #bdbdbd;
+$grey2:#202020; 
+$secondary: #909090;
+$tertiary: #ffffff;
+$black: #202020;
+$grey3: #f2f2f2;
+$grey4: #585858d8;
+
+$borderRadius: 5px;
+
+
+@mixin centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin alignCenterFlex {
+    display: flex;
+    align-items: center;
+  }

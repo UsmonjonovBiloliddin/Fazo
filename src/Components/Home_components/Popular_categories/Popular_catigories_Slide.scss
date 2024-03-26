@@ -1,0 +1,255 @@
+.Popular_catigories_Slide {
+  width: 100%;
+  height: auto;
+
+  .Popular_catigories_Slide_text {
+    width: 100%;
+    padding: 0px 100px;
+
+    h3 {
+      margin: 20px 0px;
+      font-size: 20px;
+      color: #4d4d4d;
+    }
+  }
+  .Swiper {
+    width: 100%;
+    padding: 0px 80px;
+    position: relative;
+    .swiper {
+      width: 96%;
+      height: 100px;
+    }
+    .swiper-slide {
+      border: 1px solid #d5d4d4;
+      display: flex;
+      border-radius: 10px;
+      cursor: pointer;
+      
+      
+
+      .text {
+        width: 60%;
+        padding: 10px;
+        color: rgb(64, 64, 64);
+        font-size: 13px;
+      }
+
+      .img {
+        width: 42%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .header_swiper_buttons {
+    width: 89.2%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+
+    .swiper_buttons_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 50%;
+      border: 1px solid #e0e0e0;
+      color: #808080;
+      background-color: #f7f7f7;
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.1s ease;
+      z-index: 3;
+      &:active {
+        background-color: #ffffff;
+      }
+    }
+  }
+  .text {
+    width: 100%;
+    height: auto;
+    padding: 0px 100px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .Popular_catigories_Slide {
+    width: 100%;
+    height: auto;
+
+    .Popular_catigories_Slide_text {
+      width: 100%;
+      padding: 0px 20px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #202020;
+      }
+    }
+    .Swiper {
+      width: 100%;
+      padding: 0px 20px;
+      position: relative;
+
+      .swiper {
+        width: 96%;
+        height: 100px;
+      }
+      .swiper-slide {
+        width: 100%;
+        border: 1px solid #d5d4d4;
+        display: flex;
+        border-radius: 10px;
+
+        .img {
+          width: 40%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .header_swiper_buttons {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .Popular_catigories_Slide {
+    width: 100%;
+    height: auto;
+    .Popular_catigories_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+      }
+    }
+    .Swiper {
+      width: 100%;
+      padding: 0px 20px;
+      position: relative;
+
+      .swiper {
+        width: 96%;
+        height: 100px;
+      }
+      .swiper-slide {
+        width: 100%;
+        display: flex;
+
+        .img {
+          width: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .header_swiper_buttons {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .Popular_catigories_Slide {
+    width: 100%;
+    height: auto;
+
+    .Popular_catigories_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #202020;
+      }
+    }
+    .Swiper {
+      width: 100%;
+      padding: 0px 20px;
+      position: relative;
+
+      .swiper {
+        width: 96%;
+        height: 100px;
+      }
+      .swiper-slide {
+        width: 100%;
+        border: 1px solid #d5d4d4;
+        display: flex;
+        border-radius: 10px;
+
+        .img {
+          width: 42%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .header_swiper_buttons {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .Popular_catigories_Slide {
+    width: 100%;
+    height: auto;
+
+    .Popular_catigories_Slide_text {
+      width: 100%;
+      padding: 0px 40px;
+
+      h3 {
+        margin: 20px 0px;
+        font-size: 17px;
+        color: #202020;
+      }
+    }
+    .Swiper {
+      width: 100%;
+      padding: 0px 20px;
+      position: relative;
+
+      .swiper {
+        width: 96%;
+        height: 100px;
+      }
+      .swiper-slide {
+        width: 100%;
+        border: 1px solid #d5d4d4;
+        display: flex;
+        border-radius: 10px;
+
+        .img {
+          width: 42%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .header_swiper_buttons {
+      display: none;
+    }
+  }
+}
