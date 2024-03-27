@@ -9,10 +9,10 @@ import PraductService from "../../../Service/ApiService";
 const Suggestions = () => {
 
   const [boxs, setBoxs] = useState();
+
   const getApi = async () => {
     try {
       const response = await PraductService.getProduct(`categories/get_all_source?page=1&limit=25`);
-
       setBoxs(response.data);
     } catch (error) {
       console.log(error);
@@ -47,7 +47,7 @@ const Suggestions = () => {
               </div>
               <div className="price">
                 <h3>
-                  <del>1 373 000 сум</del> <hr /> <span>1 304 000 сум</span>
+                  <del>{box.discount_price}сум</del> <hr /> <span>{box.price} сум</span>
                 </h3>
               </div>
               <div className="name">

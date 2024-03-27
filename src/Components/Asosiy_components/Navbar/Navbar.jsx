@@ -88,6 +88,7 @@ const Navbar = () => {
             <p>Войти</p>
             {/* <div className="quantity"><p>3</p></div> */}
           </NavLink>
+          
 
           <NavLink to={"/Filter"}>
             <LiaBalanceScaleRightSolid className="icon" />

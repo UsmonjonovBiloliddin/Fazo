@@ -1,31 +1,28 @@
 import "./Login.scss";
 // icons
-import { LuLock} from "react-icons/lu";
+import { LuLock } from "react-icons/lu";
 import { Link, useNavigate } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { useState } from "react";
 import { Input } from "../../ui/index";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  loginUserError,
-  loginUserStart,
-  loginUserSuccess,
   signUserError,
   signUserStart,
   signUserSuccess,
 } from "../../Slice/authSlice";
 import AuthService from "../../Service/auth";
+import { setItem } from "../../helpers/persistance-storage";
 
 const Login = () => {
-
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { isLoading } = useSelector((state) => state.auth);
 
   const LoginHandler = async (e) => {
-
     e.preventDefault();
 
     dispatch(signUserStart());
@@ -33,15 +30,15 @@ const Login = () => {
     const user = {
       username,
       password,
-  }
+    };
     try {
       const response = await AuthService.userLogin(user);
-      console.log(response);
+      setItem("token " , response.data.access_token)
       dispatch(signUserSuccess());
+      navigate("/")
     } catch (error) {
       dispatch(signUserError(error));
     }
-   
   };
   return (
     <div className="login">
